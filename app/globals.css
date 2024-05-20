@@ -2,32 +2,153 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-gray-300 overflow-hidden;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+h1 {
+  @apply font-semibold text-2xl text-center pt-2 mb-4 mt-0;
+}
+
+.container {
+  @apply bg-stone-200 h-[calc(100vh-3.3rem)] mx-auto overflow-scroll;
+
+  header {
+    @apply bg-emerald-800 text-amber-400 py-1 mb-6;
   }
 }
+
+.btn {
+  @apply font-bold py-2 px-4 rounded-lg ring-4 active:translate-y-[2px] active:translate-x-[1px] bg-green-400 text-stone-700 ring-green-500 ring-inset hover:bg-green-300 hover:ring-green-400 active:bg-green-200 active:ring-green-300;
+}
+
+.btnZero {
+  @apply font-bold py-2 px-4 rounded-lg ring-4 active:translate-y-[2px] active:translate-x-[1px] bg-white bg-opacity-0 text-white ring-white ring-inset hover:bg-opacity-10 active:bg-opacity-50 active:ring-stone-200;
+}
+
+.btnAzul {
+  @apply font-bold py-2 px-4 rounded-lg ring-4 active:translate-y-[2px] active:translate-x-[1px] bg-sky-300 text-stone-700 ring-sky-400 ring-inset hover:bg-sky-200 hover:ring-sky-300 active:bg-sky-100 active:ring-sky-200;
+}
+
+.btnAlerta {
+  @apply font-bold py-2 px-4 rounded-lg ring-4 active:translate-y-[2px] active:translate-x-[1px] bg-yellow-400 text-stone-700 ring-yellow-500 ring-inset hover:bg-yellow-300 hover:ring-yellow-400 active:bg-yellow-200 active:ring-yellow-300;
+}
+
+.btnNeutro {
+  @apply font-bold py-2 px-4 rounded-lg ring-4 active:translate-y-[2px] active:translate-x-[1px] bg-gray-400 text-stone-700 ring-gray-500 ring-inset hover:bg-gray-300 hover:ring-gray-400 active:bg-gray-200 active:ring-gray-300;
+}
+
+.btnPerigo {
+  @apply font-bold py-2 px-4 rounded-lg ring-4 active:translate-y-[2px] active:translate-x-[1px] bg-red-600 text-white ring-red-700 ring-inset hover:bg-red-500 hover:ring-red-600 active:bg-red-400 active:ring-red-400;
+}
+
+.lnk {
+  @apply text-green-800 font-semibold underline m-2 hover:text-green-600;
+}
+
+.lnkLight {
+  @apply text-stone-200 font-semibold underline m-2 hover:text-white active:translate-y-[2px] active:translate-x-[1px];
+}
+
+.aba {
+  @apply bg-stone-300 border-stone-400 rounded-t-xl w-full pt-2 border peer-checked:bg-green-400;
+}
+
+.aba:hover {
+  @apply shadow-stone-300 shadow-inner bg-stone-200;
+}
+
+.aba:has(input[type="radio"]:checked) {
+  @apply bg-stone-200 border-b-0;
+}
+
+.aba:has(input[type="radio"]:checked):hover {
+  @apply shadow-none;
+}
+
+.tabela {
+  input {
+    @apply p-0 m-0;
+  }
+
+  table tr,
+  th,
+  td {
+    @apply border border-slate-600 px-2 m-0;
+  }
+
+  th {
+    @apply text-emerald-800;
+  }
+
+  table input {
+    @apply border-none w-full min-h-8 focus:outline-none rounded-none px-2;
+  }
+
+  thead tr {
+    @apply bg-emerald-600/30;
+  }
+
+  tbody tr {
+    @apply odd:bg-white even:bg-zinc-200 hover:bg-amber-100;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.noscrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.noscrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* START: Card Livro styles */
+.livro-card {
+  @apply flex flex-col p-6 justify-center items-start text-black bg-blue-300 hover:bg-white hover:shadow-md rounded-3xl;
+}
+
+.livro-card__content {
+  @apply w-full flex justify-between items-start gap-2;
+}
+
+.livro-card__content-title {
+  @apply text-[22px] leading-[26px] font-bold capitalize;
+}
+
+.livro-card__price {
+  @apply flex mt-6 text-[32px] leading-[38px] font-extrabold;
+}
+
+.livro-card__price-dollar {
+  @apply self-start text-[14px] leading-[17px] font-semibold;
+}
+
+.livro-card__price-day {
+  @apply self-end text-[14px] leading-[17px] font-medium;
+}
+
+.livro-card__image {
+  @apply relative w-full h-40 my-3 object-contain;
+}
+
+.livro-card__icon-container {
+  @apply flex group-hover:invisible w-full justify-between text-gray-500;
+}
+
+.livro-card__icon {
+  @apply flex flex-col justify-center items-center gap-2;
+}
+
+.livro-card__icon-text {
+  @apply text-[14px] leading-[17px];
+}
+
+.livro-card__btn-container {
+  @apply hidden group-hover:flex absolute bottom-0 w-full z-10;
+}
+/* END: Card Livro styles */
