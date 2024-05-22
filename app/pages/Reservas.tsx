@@ -1,6 +1,8 @@
 const Reservas = () => {
 	return (
-		<main><h1>Reservas</h1></main>
+		<main>
+			<h1>Reservas</h1>
+		</main>
 	)
 }
 

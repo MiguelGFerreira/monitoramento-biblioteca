@@ -10,9 +10,9 @@ interface LivroCardProps {
 	livro: Livro
 }
 
-const LivroCard = ({livro}: LivroCardProps) => {
+const LivroCard = ({ livro }: LivroCardProps) => {
 	const { titulo, autor, categoria, subcategoria, paginas, status, imagem } = livro;
-	
+
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
@@ -28,7 +28,7 @@ const LivroCard = ({livro}: LivroCardProps) => {
 			</p>
 
 			<div className='relative w-full h-40 my-3 object-contain'>
-				<Image src="https://m.media-amazon.com/images/I/41VDCjYWsdL._SY445_SX342_.jpg" alt="imagem livro" fill priority className='object-contain' />
+				<Image src={imagem} alt="imagem livro" fill priority className='object-contain' />
 			</div>
 
 			<div className='relative flex w-full mt-2'>
@@ -53,7 +53,24 @@ const LivroCard = ({livro}: LivroCardProps) => {
 				</div>
 
 				<div className='livro-card__btn-container'>
-					<Button onClick={() => setIsOpen(true)} />
+					<Button
+						type="button"
+						className='w-full py-[16px]'
+						onClick={() => setIsOpen(true)}
+					>
+						<span className='text-amber-700 text-[14px] leading-[17px] font-bold'>
+							Ver mais
+						</span>
+
+						<div className='relative w-6 h-6'>
+							<Image
+								src={"/right-arrow.svg"}
+								alt="Right Icon"
+								fill
+								className='object-contain'
+							/>
+						</div>
+					</Button>
 				</div>
 			</div>
 

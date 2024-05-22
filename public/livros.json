@@ -1,0 +1,912 @@
+[
+   {
+      "Id":1,
+      "titulo":"Vida dupla",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Ficção",
+      "autor":"S.J. Watson",
+      "paginas":352,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Vida dupla.jpg"
+   },
+   {
+      "Id":2,
+      "titulo":"China Século XXI",
+      "categoria":"História",
+      "subcategoria":"China contemporânea",
+      "autor":"Li Cheng",
+      "paginas":368,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/China Século XXI.jpg"
+   },
+   {
+      "Id":3,
+      "titulo":"Brava Gente Polonesa",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Literatura Histórica",
+      "autor":"Eduardo Glazar",
+      "paginas":224,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Brava Gente Polonesa.jpg"
+   },
+   {
+      "Id":4,
+      "titulo":"O retorno do jovem príncipe",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Ficção",
+      "autor":"A.G. Roemmers",
+      "paginas":96,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/O retorno do jovem príncipe.jpg"
+   },
+   {
+      "Id":5,
+      "titulo":"O Reino: uma Aventura dos Fargo",
+      "categoria":"Policial, Suspense e Mistério",
+      "subcategoria":"Mistério",
+      "autor":"Clive Cussler",
+      "paginas":416,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/O Reino uma Aventura dos Fargo.jpg"
+   },
+   {
+      "Id":6,
+      "titulo":"A fúria dos reis: As Crônicas de Gelo e Fogo, volume 2",
+      "categoria":"Fantasia, Horror e Ficção Científica",
+      "subcategoria":"Fantasia",
+      "autor":"George R.R. Martin",
+      "paginas":656,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/A fúria dos reis As Crônicas de Gelo e Fogo, volume 2.jpg"
+   },
+   {
+      "Id":7,
+      "titulo":"A batalha do apocalipse: Da queda dos anjos ao crepúsculo do mundo",
+      "categoria":"Jovens e Adolescentes",
+      "subcategoria":"Fantasia e Ficção Científica",
+      "autor":"Eduardo Spohr",
+      "paginas":586,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/A batalha do apocalipse Da queda dos anjos.jpg"
+   },
+   {
+      "Id":8,
+      "titulo":"O último império: Os últimos dias da União Soviética",
+      "categoria":"História",
+      "subcategoria":"Europa",
+      "autor":"Serhii Plokhy",
+      "paginas":528,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/O último império Os últimos dias da União Soviética.jpg"
+   },
+   {
+      "Id":9,
+      "titulo":"O último olimpiano: Capa nova: 5",
+      "categoria":"Jovens e Adolescentes",
+      "subcategoria":"Fantasia e Ficção Científica",
+      "autor":"Rick Riordan",
+      "paginas":384,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/O ultimo olimpiano capa nova 5.jpg"
+   },
+   {
+      "Id":10,
+      "titulo":"A Batalha do Labirinto - Percy Jackson e os Olimpianos 4",
+      "categoria":"Jovens e Adolescentes",
+      "subcategoria":"Fantasia e Ficção Científica",
+      "autor":"Rick Riordan",
+      "paginas":361,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/A Batalha do Labirinto - Percy Jackson e os Olimpianos 4.jpg"
+   },
+   {
+      "Id":11,
+      "titulo":"A Sabedoria do Condado",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Ficção",
+      "autor":"Noble Smith",
+      "paginas":176,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/A Sabedoria do Condado.jpg"
+   },
+   {
+      "Id":12,
+      "titulo":"Mais escuro: Cinquenta tons mais escuros pelos olhos de Christian: 2",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Ficção",
+      "autor":"E L James",
+      "paginas":560,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Mais escuro Cinquenta tons mais escuros pelos olhos de Christian 2.jpg"
+   },
+   {
+      "Id":13,
+      "titulo":"O cliente",
+      "categoria":"Policial, Suspense e Mistério",
+      "subcategoria":"Mistério",
+      "autor":"John Grisham",
+      "paginas":450,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/O cliente.jpg"
+   },
+   {
+      "Id":14,
+      "titulo":"A vingança",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Ação e aventura",
+      "autor":"Christopher Reich",
+      "paginas":464,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/A vingança.jpg"
+   },
+   {
+      "Id":15,
+      "titulo":"À primeira vista",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Literatura de Gênero",
+      "autor":"Nicholas Sparks",
+      "paginas":304,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/A primeira vista.jpg"
+   },
+   {
+      "Id":16,
+      "titulo":"O Discurso Secreto",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Ação e aventura",
+      "autor":"Tom Rob Smith",
+      "paginas":416,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/O Discurso Secreto.jpg"
+   },
+   {
+      "Id":17,
+      "titulo":"O guardião de memórias",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Poesia",
+      "autor":"Kim Edwards",
+      "paginas":512,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/O guardião de memorias.jpg"
+   },
+   {
+      "Id":18,
+      "titulo":"O Código Da Vinci (Robert Langdon - Livro 2)",
+      "categoria":"Policial, Suspense e Mistério",
+      "subcategoria":"Suspense",
+      "autor":"Dan Brown",
+      "paginas":489,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/o codigo da vinci.jpg"
+   },
+   {
+      "Id":19,
+      "titulo":"O Código Da Vinci Roteiro Ilustrado",
+      "categoria":"Arte, Cinema e Fotografia",
+      "subcategoria":"Fotografia",
+      "autor":"Akira Goldsman",
+      "paginas":240,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/O codigo da vinci roteiro ilustrado.jpg"
+   },
+   {
+      "Id":20,
+      "titulo":"Os assassinos do cartão-postal",
+      "categoria":"Policial, Suspense e Mistério",
+      "subcategoria":"Mistério",
+      "autor":"James Patterson",
+      "paginas":400,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/os assassinos do cartão portal.jpg"
+   },
+   {
+      "Id":21,
+      "titulo":"A garota no trem",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Ação e aventura",
+      "autor":"Paula Hawkins",
+      "paginas":378,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/A garota no trem.jpg"
+   },
+   {
+      "Id":22,
+      "titulo":"Rangers Ordem dos Arqueiros Folha de Carvalho Volume 4",
+      "categoria":"Fantasia, Horror e Ficção Científica",
+      "subcategoria":"Fantasia",
+      "autor":"John Flanagan",
+      "paginas":320,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Rangers Ordem dos Arqueiros Folha de Carvalho Volume 4.jpg"
+   },
+   {
+      "Id":23,
+      "titulo":"Rangers Ordem dos Arqueiros 3 Terra do Gelo Usado",
+      "categoria":"Fantasia, Horror e Ficção Científica",
+      "subcategoria":"Fantasia",
+      "autor":"John Flanagan",
+      "paginas":288,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Rangers Ordem dos Arqueiros 3 Terra do Gelo Usado.jpg"
+   },
+   {
+      "Id":24,
+      "titulo":"Rangers Ordem dos Arqueiros 2. Ponte em Chamas",
+      "categoria":"Fantasia, Horror e Ficção Científica",
+      "subcategoria":"Fantasia",
+      "autor":"John Flanagan",
+      "paginas":352,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Rangers Ordem dos Arqueiros 2. Ponte em Chamas.jpg"
+   },
+   {
+      "Id":25,
+      "titulo":"O monge e o executivo: Uma história sobre a essência da liderança",
+      "categoria":"Administração, Negócios e Economia",
+      "subcategoria":"Gestão e Liderança",
+      "autor":"James C. Hunter",
+      "paginas":144,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/o monge e o executivo.jpg"
+   },
+   {
+      "Id":26,
+      "titulo":"O navio das noivas",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Literatura Histórica",
+      "autor":"Jojo Moyes",
+      "paginas":400,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/O navio das noivas.jpg"
+   },
+   {
+      "Id":27,
+      "titulo":"Morte Súbita",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Literatura Histórica",
+      "autor":"J.K. Rowling",
+      "paginas":512,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Morte Súbita.jpg"
+   },
+   {
+      "Id":28,
+      "titulo":"O dia da caça",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Ação e aventura",
+      "autor":"James Patterson",
+      "paginas":368,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/O dia da caça.jpg"
+   },
+   {
+      "Id":29,
+      "titulo":"Viagem ao centro da Terra",
+      "categoria":"Fantasia, Horror e Ficção Científica",
+      "subcategoria":"Ficção Científica",
+      "autor":"Júlio Verne",
+      "paginas":304,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Viagem ao centro da Terra.jpg"
+   },
+   {
+      "Id":30,
+      "titulo":"Os Belos Dias De Minha Juventude",
+      "categoria":"Jovens e Adolescentes",
+      "subcategoria":"Literatura e Ficção",
+      "autor":"Ana Novac",
+      "paginas":192,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Os Belos Dias De Minha Juventude.jpg"
+   },
+   {
+      "Id":31,
+      "titulo":"Cidade dos ossos (Vol. 1 Os Instrumentos Mortais)",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Ficção",
+      "autor":"Cassandra Clare",
+      "paginas":512,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Cidade dos ossos (Vol. 1 Os Instrumentos Mortais).jpg"
+   },
+   {
+      "Id":32,
+      "titulo":"Cidade dos anjos caídos (Vol.4 Os Instrumentos Mortais)",
+      "categoria":"Fantasia, Horror e Ficção Científica",
+      "subcategoria":"Fantasia",
+      "autor":"Cassandra Clare",
+      "paginas":448,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Cidade dos anjos caídos (Vol.4 Os Instrumentos Mortais).jpg"
+   },
+   {
+      "Id":33,
+      "titulo":"Cidade de vidro (Vol.3 Os Instrumentos Mortais)",
+      "categoria":"Fantasia, Horror e Ficção Científica",
+      "subcategoria":"Fantasia",
+      "autor":"Cassandra Clare",
+      "paginas":496,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Cidade de vidro (Vol.3 Os Instrumentos Mortais).jpg"
+   },
+   {
+      "Id":34,
+      "titulo":"Private: Suspeito nº 1",
+      "categoria":"Policial, Suspense e Mistério",
+      "subcategoria":"Mistério",
+      "autor":"James Patterson",
+      "paginas":416,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Private suspeito n 1.jpg"
+   },
+   {
+      "Id":35,
+      "titulo":"Private: Missão Jogos Olímpicos",
+      "categoria":"Policial, Suspense e Mistério",
+      "subcategoria":"Mistério",
+      "autor":"James Patterson",
+      "paginas":448,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Private missão jogos olimpicos.jpg"
+   },
+   {
+      "Id":36,
+      "titulo":"Paralela",
+      "categoria":"Jovens e Adolescentes",
+      "subcategoria":"Romance",
+      "autor":"Lauren Miller",
+      "paginas":448,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Paralela.jpg"
+   },
+   {
+      "Id":37,
+      "titulo":"O homem que matou Getúlio Vargas",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Literatura Histórica",
+      "autor":"Jô Soares",
+      "paginas":336,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/O homem que matou Getúlio Vargas.jpg"
+   },
+   {
+      "Id":38,
+      "titulo":"Amélia, Adeus",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Literatura de Gênero",
+      "autor":"Lobos Julio",
+      "paginas":240,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Amélia Adeus.png"
+   },
+   {
+      "Id":39,
+      "titulo":"Paris para um e outros contos",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Ação e aventura",
+      "autor":"Jojo Moyes",
+      "paginas":320,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Paris para um e outros contos.jpg"
+   },
+   {
+      "Id":40,
+      "titulo":"Gentlemen",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Ficção",
+      "autor":"Klas Östergren",
+      "paginas":416,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Gentlemen.jpg"
+   },
+   {
+      "Id":41,
+      "titulo":"Fogo cruzado",
+      "categoria":"Policial, Suspense e Mistério",
+      "subcategoria":"Mistério",
+      "autor":"James Patterson",
+      "paginas":416,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Fogo cruzado.jpg"
+   },
+   {
+      "Id":42,
+      "titulo":"Noites de Tormenta",
+      "categoria":"Romance",
+      "subcategoria":"Romance",
+      "autor":"Nicholas Sparks",
+      "paginas":240,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Noites de Tormenta.jpg"
+   },
+   {
+      "Id":43,
+      "titulo":"Feliz natal, Alex Cross",
+      "categoria":"Policial, Suspense e Mistério",
+      "subcategoria":"Mistério",
+      "autor":"James Patterson",
+      "paginas":352,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Feliz natal, Alex Cross.jpg"
+   },
+   {
+      "Id":44,
+      "titulo":"Uma mulher perfeita",
+      "categoria":"Policial, Suspense e Mistério",
+      "subcategoria":"Suspense",
+      "autor":"James Grippando",
+      "paginas":464,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Uma mulher perfeita.jpg"
+   },
+   {
+      "Id":45,
+      "titulo":"Sniper de Elite: Perseguição ao Lobo",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Drama",
+      "autor":"Scott Mcewen",
+      "paginas":416,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Sniper de elite Perseguição ao Lobo.jpg"
+   },
+   {
+      "Id":46,
+      "titulo":"Uma longa jornada",
+      "categoria":"Romance",
+      "subcategoria":"Contemporâneo",
+      "autor":"Nicholas Sparks",
+      "paginas":464,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Uma longa jornada.jpg"
+   },
+   {
+      "Id":47,
+      "titulo":"Uma luz no fim do túnel",
+      "categoria":"Jovens e Adolescentes",
+      "subcategoria":"Literatura e Ficção",
+      "autor":"Ganymédes José",
+      "paginas":256,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Uma luz no fim do túnel.jpg"
+   },
+   {
+      "Id":48,
+      "titulo":"Tá todo mundo mal: O Livro Das Crises",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Drama",
+      "autor":"Jout Jout",
+      "paginas":200,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Tá todo mundo mal.jpg"
+   },
+   {
+      "Id":49,
+      "titulo":"Superman - uma biografia não autorizada",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Drama",
+      "autor":"Glen Weldon",
+      "paginas":336,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Superman - uma biografia não autorizada.jpg"
+   },
+   {
+      "Id":50,
+      "titulo":"Depois daquela viagem",
+      "categoria":"Jovens e Adolescentes",
+      "subcategoria":"Literatura e Ficção",
+      "autor":"Valéria Piassa Polizzi",
+      "paginas":264,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Depois daquela viagem.jpg"
+   },
+   {
+      "Id":51,
+      "titulo":"Quando Nietzsche chorou",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Literatura de Gênero",
+      "autor":"Irvin D. Yalom",
+      "paginas":456,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Quando Nietzsche chorou.jpg"
+   },
+   {
+      "Id":52,
+      "titulo":"O Diário de Anne Frank",
+      "categoria":"Jovens e Adolescentes",
+      "subcategoria":"Literatura e Ficção",
+      "autor":"Vários Autores",
+      "paginas":372,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/O Diário de Anne Frank.jpg"
+   },
+   {
+      "Id":53,
+      "titulo":"O Pequeno Príncipe",
+      "categoria":"Infantil",
+      "subcategoria":"Literatura",
+      "autor":"Antoine Saint-Exupéry",
+      "paginas":96,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/O Pequeno Príncipe.jpg"
+   },
+   {
+      "Id":54,
+      "titulo":"Cinquenta tons de cinza: (Série Cinquenta tons de cinza vol. 1)",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Ficção",
+      "autor":"E L James",
+      "paginas":528,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Cinquenta tons de cinza.jpg"
+   },
+   {
+      "Id":55,
+      "titulo":"Éramos seis",
+      "categoria":"Jovens e Adolescentes",
+      "subcategoria":"Literatura e Ficção",
+      "autor":"Maria José Dupré",
+      "paginas":328,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Éramos seis.jpg"
+   },
+   {
+      "Id":56,
+      "titulo":"Carga Perigosa",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Literatura Mundial",
+      "autor":"Ivan Sant Anna",
+      "paginas":520,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Carga Perigosa.jpg"
+   },
+   {
+      "Id":57,
+      "titulo":"Canaã",
+      "categoria":"Romance",
+      "subcategoria":"Contemporâneo",
+      "autor":"Graça Aranha",
+      "paginas":284,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Canaã.jpg"
+   },
+   {
+      "Id":58,
+      "titulo":"Baía da esperança",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Ficção",
+      "autor":"Jojo Moyes",
+      "paginas":416,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Baía da esperança.jpg"
+   },
+   {
+      "Id":59,
+      "titulo":"A volta ao mundo em 80 dias",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Ação e aventura",
+      "autor":"Júlio Verne",
+      "paginas":244,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/A volta ao mundo em 80 dias.jpg"
+   },
+   {
+      "Id":60,
+      "titulo":"Somente sua",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Poesia",
+      "autor":"Sylvia Day",
+      "paginas":432,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Somente sua.jpg"
+   },
+   {
+      "Id":61,
+      "titulo":"Todo seu",
+      "categoria":"Romance",
+      "subcategoria":"Contemporâneo",
+      "autor":"Sylvia Day",
+      "paginas":464,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Todo seu.jpg"
+   },
+   {
+      "Id":62,
+      "titulo":"Toda sua",
+      "categoria":"Romance",
+      "subcategoria":"Contemporâneo",
+      "autor":"Sylvia Day",
+      "paginas":336,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Toda sua.jpg"
+   },
+   {
+      "Id":63,
+      "titulo":"Vinho & guerra: Os franceses, os nazistas e a batalha pelo maior tesouro da França",
+      "categoria":"Gastronomia e Culinária",
+      "subcategoria":"Culinária",
+      "autor":"Don Kladstrup",
+      "paginas":328,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Vinho e guerra.jpg"
+   },
+   {
+      "Id":64,
+      "titulo":"Se eu Ficar",
+      "categoria":"Jovens e Adolescentes",
+      "subcategoria":"Romance",
+      "autor":"Gayle Forman",
+      "paginas":240,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Se eu Ficar.jpg"
+   },
+   {
+      "Id":65,
+      "titulo":"Simplesmente Acontece",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Poesia",
+      "autor":"Cecelia Ahern",
+      "paginas":448,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Simplesmente Acontece.jpg"
+   },
+   {
+      "Id":66,
+      "titulo":"Profundamente sua",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Poesia",
+      "autor":"Sylvia Day",
+      "paginas":360,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Profundamente sua.jpg"
+   },
+   {
+      "Id":67,
+      "titulo":"Para sempre Alice",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Drama",
+      "autor":"Lisa Genova",
+      "paginas":320,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Para sempre Alice.jpg"
+   },
+   {
+      "Id":68,
+      "titulo":"A última carta de amor",
+      "categoria":"Jovens e Adolescentes",
+      "subcategoria":"Literatura e Ficção",
+      "autor":"Jojo Moyes",
+      "paginas":512,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/A última carta de amor.jpg"
+   },
+   {
+      "Id":69,
+      "titulo":"As vantagens de ser invisível",
+      "categoria":"Jovens e Adolescentes",
+      "subcategoria":"Literatura e Ficção",
+      "autor":"Stephen Chbosky",
+      "paginas":224,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/As vantagens de ser invisível.jpg"
+   },
+   {
+      "Id":70,
+      "titulo":"A mãe-minuto",
+      "categoria":"Saúde e Família",
+      "subcategoria":"Psicologia e Aconselhamento",
+      "autor":"Spencer Johnson",
+      "paginas":112,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/A mãe-minuto.jpg"
+   },
+   {
+      "Id":71,
+      "titulo":"A menina que roubava livros",
+      "categoria":"Fantasia, Horror e Ficção Científica",
+      "subcategoria":"Ficção Científica",
+      "autor":"Markus Zusak",
+      "paginas":584,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/A menina que roubava livros.jpg"
+   },
+   {
+      "Id":72,
+      "titulo":"Para Onde ela foi",
+      "categoria":"Jovens e Adolescentes",
+      "subcategoria":"Romance",
+      "autor":"Gayle Forman",
+      "paginas":304,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Para Onde ela foi.jpg"
+   },
+   {
+      "Id":73,
+      "titulo":"Eu e você no fim do mundo",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Drama",
+      "autor":"Siobhan Vivian",
+      "paginas":384,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Eu e você no fim do mundo.jpg"
+   },
+   {
+      "Id":74,
+      "titulo":"Melancia",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Humor",
+      "autor":"Marian Keyes",
+      "paginas":490,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Melancia.jpg"
+   },
+   {
+      "Id":75,
+      "titulo":"A bruxa não vai para a fogueira neste livro",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Poesia",
+      "autor":"Amanda Lovelace",
+      "paginas":208,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/A bruxa não vai para a fogueira neste livro.jpg"
+   },
+   {
+      "Id":76,
+      "titulo":"Não tenha medo de ser chefe",
+      "categoria":"Administração, Negócios e Economia",
+      "subcategoria":"Carreiras",
+      "autor":"Bruce Tulgan",
+      "paginas":192,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Não tenha medo de ser chefe.jpg"
+   },
+   {
+      "Id":77,
+      "titulo":"Não se apega, não!",
+      "categoria":"Autoajuda",
+      "subcategoria":"Geral",
+      "autor":"Isabela Freitas",
+      "paginas":256,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Não se apega, não!.jpg"
+   },
+   {
+      "Id":78,
+      "titulo":"Rainha de copas",
+      "categoria":"Fantasia, Horror e Ficção Científica",
+      "subcategoria":"Fantasia",
+      "autor":"Colleen Oakes e Thiago Dias",
+      "paginas":288,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Rainha de copas.jpg"
+   },
+   {
+      "Id":79,
+      "titulo":"O Rosto Atrás do Véu",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Literatura Mundial",
+      "autor":"Donna Gehrke-White",
+      "paginas":312,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/O Rosto Atrás do Véu.jpg"
+   },
+   {
+      "Id":80,
+      "titulo":"Movido pelo Coração",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Poesia",
+      "autor":"Michael de Assis Matos",
+      "paginas":200,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Movido pelo Coração.jpg"
+   },
+   {
+      "Id":81,
+      "titulo":"Felicidade Clandestina",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Literatura de Gênero",
+      "autor":"Clarice Lispector",
+      "paginas":144,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Felicidade Clandestina.jpg"
+   },
+   {
+      "Id":82,
+      "titulo":"Cadeira de rodas e romances inglese",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Ficção",
+      "autor":"Wesley Sathler",
+      "paginas":96,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Cadeira de rodas e romances inglese.jpg"
+   },
+   {
+      "Id":83,
+      "titulo":"A Janela de Overton",
+      "categoria":"Fantasia, Horror e Ficção Científica",
+      "subcategoria":"Ficção Científica",
+      "autor":"Glenn Beck",
+      "paginas":432,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/A Janela de Overton.jpg"
+   },
+   {
+      "Id":84,
+      "titulo":"A culpa é das estrelas",
+      "categoria":"Jovens e Adolescentes",
+      "subcategoria":"Literatura e Ficção",
+      "autor":"John Green",
+      "paginas":318,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/A culpa é das estrelas.jpg"
+   },
+   {
+      "Id":85,
+      "titulo":"9º julgamento",
+      "categoria":"Policial, Suspense e Mistério",
+      "subcategoria":"Mistério",
+      "autor":"James Patterson",
+      "paginas":368,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/9º julgamento.jpg"
+   },
+   {
+      "Id":86,
+      "titulo":"Um sopro de vida",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Literatura de Gênero",
+      "autor":"Clarice Lispector",
+      "paginas":176,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Um sopro de vida.jpg"
+   },
+   {
+      "Id":87,
+      "titulo":"Quem é você, Alasca?",
+      "categoria":"Jovens e Adolescentes",
+      "subcategoria":"Romance",
+      "autor":"John Green",
+      "paginas":272,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Quem é você, Alasca.jpg"
+   },
+   {
+      "Id":88,
+      "titulo":"A Máquina que Mudou o Mundo",
+      "categoria":"Administração, Negócios e Economia",
+      "subcategoria":"Marketing e Vendas",
+      "autor":"James P. Womack",
+      "paginas":352,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/A Máquina que Mudou o Mundo.jpg"
+   },
+   {
+      "Id":89,
+      "titulo":"Produção Lean Simplificada",
+      "categoria":"Administração, Negócios e Economia",
+      "subcategoria":"Livros de Referência",
+      "autor":"Pascal Dennis",
+      "paginas":272,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/Produção Lean Simplificada.jpg"
+   },
+   {
+      "Id":90,
+      "titulo":"A máquina perfeita",
+      "categoria":"Administração, Negócios e Economia",
+      "subcategoria":"Gestão e Liderança",
+      "autor":"Anand Sharma",
+      "paginas":320,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/A máquina perfeita.png"
+   },
+   {
+      "Id":91,
+      "titulo":"120 Horas",
+      "categoria":"Leitura e Ficção",
+      "subcategoria":"Ficção",
+      "autor":"Luiz Eduardo Matta",
+      "paginas":200,
+      "status":"Ativo",
+      "imagem":"http://10.0.73.216:83/NodeBiblioteca/capas/120 Horas.jpg"
+   }
+]

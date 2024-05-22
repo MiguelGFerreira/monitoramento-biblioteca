@@ -2,10 +2,10 @@ module.exports = {
 	images: {
 		remotePatterns: [
 			{
-				protocol: 'https',
-				hostname: 'm.media-amazon.com',
-				port: '',
-				pathname: '/images/I/**',
+				protocol: 'http',
+				hostname: '10.0.73.216',
+				port: '83',
+				pathname: '/NodeBiblioteca/capas/**',
 			},
 		],
 	},

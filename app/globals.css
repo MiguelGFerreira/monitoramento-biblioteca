@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-gray-300 overflow-hidden;
-}
-
-h1 {
-  @apply font-semibold text-2xl text-center pt-2 mb-4 mt-0;
-}
-
 .container {
   @apply bg-stone-200 h-[calc(100vh-3.3rem)] mx-auto overflow-scroll;
 
@@ -107,9 +99,31 @@ h1 {
   /* Firefox */
 }
 
+/* START: General styles */
+.max-width {
+  @apply max-w-[1440px] mx-auto;
+}
+
+.padding-x {
+  @apply sm:px-16 px-6;
+}
+
+.padding-y {
+  @apply py-4;
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+/* END: General styles */
+
 /* START: Card Livro styles */
 .livro-card {
-  @apply flex flex-col p-6 justify-center items-start text-black bg-blue-300 hover:bg-white hover:shadow-md rounded-3xl;
+  @apply flex flex-col p-6 justify-center items-start text-black bg-emerald-600 hover:bg-emerald-300 hover:shadow-md rounded-3xl;
 }
 
 .livro-card__content {
@@ -149,6 +163,6 @@ h1 {
 }
 
 .livro-card__btn-container {
-  @apply hidden group-hover:flex absolute bottom-0 w-full z-10;
+  @apply hidden group-hover:flex bg-amber-400 rounded-2xl absolute bottom-0 w-full z-10;
 }
 /* END: Card Livro styles */
