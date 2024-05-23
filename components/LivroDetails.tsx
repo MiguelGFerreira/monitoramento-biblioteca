@@ -67,10 +67,12 @@ const LivroDetails = ({ isOpen, closeModal, livro }: CarDetailsProps) => {
 
 										<div className="mt-3 flex flex-wrap gap-4">
 											{Object.entries(livro).map(([key, value]) => (
-												<div className="flex justify-between gap-5 w-full text-right" key={key}>
-													<h4 className="text-grey capitalize">{key.replace("_", " ")}</h4>
-													<p className="text-black-100 font-semibold">{value}</p>
-												</div>
+												key !== "link_capa" && (
+													<div className="flex justify-between gap-5 w-full text-right" key={key}>
+														<h4 className="text-grey capitalize">{key.replace("_", " ")}</h4>
+														<p className="text-black-100 font-semibold">{value}</p>
+													</div>
+												)
 											))}
 										</div>
 									</div>

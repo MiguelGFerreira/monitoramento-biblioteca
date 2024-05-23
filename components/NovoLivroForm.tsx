@@ -4,24 +4,15 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 import { Button } from "@/components/ui/button"
-import {
-	Form,
-	FormControl,
-	FormDescription,
-	FormField,
-	FormItem,
-	FormLabel,
-	FormMessage,
-} from "@/components/ui/form"
+import { Form, FormControl,	FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 
 const livroSchema = z.object({
-	titulo: z.string().min(2).max(255),
-	categoria: z.string().min(2).max(50),
-	subcategoria: z.string().min(2).max(50),
-	autor: z.string().min(2).max(255),
-	paginas: z.number().positive(),
-	capa: z.string().min(2).max(255)
+	titulo: z.string().min(2, "Mínimo de 2 caracteres").max(255, "O máximo aceito é 255"),
+	categoria: z.string().min(2, "Mínimo de 2 caracteres").max(50, "O máximo aceito é 50"),
+	subcategoria: z.string().min(2, "Mínimo de 2 caracteres").max(50, "O máximo aceito é 50"),
+	autor: z.string().min(2, "Mínimo de 2 caracteres").max(255, "O máximo aceito é 255"),
+	paginas: z.coerce.number().gte(0, "Tem que ser maior que 0"),
 })
 
 const NovoLivroForm = () => {
@@ -32,8 +23,7 @@ const NovoLivroForm = () => {
 			categoria: "",
 			subcategoria: "",
 			autor: "",
-			paginas: 10,
-			capa: "",
+			paginas: 0,
 		},
 	})
 
@@ -41,7 +31,7 @@ const NovoLivroForm = () => {
 	function onSubmit(values: z.infer<typeof livroSchema>) {
 		// Do something with the form values.
 		// ✅ This will be type-safe and validated.
-		console.log(values)
+		console.log(values);
 	}
 
 	return (
@@ -57,6 +47,7 @@ const NovoLivroForm = () => {
 							<FormControl>
 								<Input {...field} />
 							</FormControl>
+							<FormMessage />
 						</FormItem>
 					)}
 				/>
@@ -70,6 +61,7 @@ const NovoLivroForm = () => {
 							<FormControl>
 								<Input {...field} />
 							</FormControl>
+							<FormMessage />
 						</FormItem>
 					)}
 				/>
@@ -83,6 +75,7 @@ const NovoLivroForm = () => {
 							<FormControl>
 								<Input {...field} />
 							</FormControl>
+							<FormMessage />
 						</FormItem>
 					)}
 				/>
@@ -96,6 +89,7 @@ const NovoLivroForm = () => {
 							<FormControl>
 								<Input {...field} />
 							</FormControl>
+							<FormMessage />
 						</FormItem>
 					)}
 				/>
@@ -109,19 +103,7 @@ const NovoLivroForm = () => {
 							<FormControl>
 								<Input type="number" {...field} />
 							</FormControl>
-						</FormItem>
-					)}
-				/>
-
-				<FormField
-					control={form.control}
-					name="capa"
-					render={({ field }) => (
-						<FormItem>
-							<FormLabel>Capa do livro</FormLabel>
-							<FormControl>
-								<Input {...field} />
-							</FormControl>
+							<FormMessage />
 						</FormItem>
 					)}
 				/>
