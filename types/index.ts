@@ -6,5 +6,5 @@ export interface Livro {
 	autor: string;
 	paginas: number;
 	status: "Ativo" | "Inativo" | "Reservado";
-	imagem: string;
+	link_capa: string;
 }

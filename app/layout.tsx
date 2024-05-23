@@ -20,20 +20,6 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={inter.className}>
-        <header>
-          <Tabs defaultValue="livros">
-            <TabsList className="w-full justify-center">
-              <TabsTrigger value="livros" className="aba">Livros</TabsTrigger>
-              <TabsTrigger value="reservas" className="aba">Reservas</TabsTrigger>
-            </TabsList>
-            <TabsContent value="livros">
-              <Livros />
-            </TabsContent>
-            <TabsContent value="reservas">
-              <Reservas />
-            </TabsContent>
-          </Tabs>
-        </header>
         {children}
       </body>
     </html>

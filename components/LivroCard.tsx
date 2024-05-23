@@ -11,7 +11,7 @@ interface LivroCardProps {
 }
 
 const LivroCard = ({ livro }: LivroCardProps) => {
-	const { titulo, autor, categoria, subcategoria, paginas, status, imagem } = livro;
+	const { titulo, autor, categoria, subcategoria, paginas, status, link_capa } = livro;
 
 	const [isOpen, setIsOpen] = useState(false);
 
@@ -28,7 +28,7 @@ const LivroCard = ({ livro }: LivroCardProps) => {
 			</p>
 
 			<div className='relative w-full h-40 my-3 object-contain'>
-				<Image src={imagem} alt="imagem livro" fill priority className='object-contain' />
+				<Image src={link_capa} alt="imagem livro" fill priority className='object-contain' />
 			</div>
 
 			<div className='relative flex w-full mt-2'>

@@ -56,7 +56,7 @@ const LivroDetails = ({ isOpen, closeModal, livro }: CarDetailsProps) => {
 
 									<div className="flex-1 flex flex-col gap-3">
 										<div className="relative w-full h-40 bg-pattern bg-cover bg-center rounded-lg">
-											<Image src={livro.imagem} alt="Imagem do livro" fill priority className='object-contain' />
+											<Image src={livro.link_capa} alt="Imagem do livro" fill priority className='object-contain' />
 										</div>
 									</div>
 
