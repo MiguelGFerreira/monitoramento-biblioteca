@@ -4,8 +4,10 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 import { Button } from "@/components/ui/button"
-import { Form, FormControl,	FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
+import { postLivro } from "@/api/livros"
+import Swal from 'sweetalert2'
 
 const livroSchema = z.object({
 	titulo: z.string().min(2, "Mínimo de 2 caracteres").max(255, "O máximo aceito é 255"),
@@ -29,14 +31,53 @@ const NovoLivroForm = () => {
 
 	// 2. Define a submit handler.
 	function onSubmit(values: z.infer<typeof livroSchema>) {
-		// Do something with the form values.
-		// ✅ This will be type-safe and validated.
-		console.log(values);
+
+		const swalWithBootstrapButtons = Swal.mixin({
+			customClass: {
+				confirmButton: "btn",
+				cancelButton: "btnPerigo"
+			},
+			buttonsStyling: false
+		});
+		swalWithBootstrapButtons.fire({
+			title: "Criar livro?",
+			html: `
+				Confirma as informações do novo livro?
+				<br>Título: ${values.titulo}
+				<br>Autor: ${values.autor}
+				<br>Páginas: ${values.paginas}
+				<br>Categoria: ${values.categoria}
+				<br>Subcategoria: ${values.subcategoria}
+			`,
+			icon: "warning",
+			showCancelButton: true,
+			confirmButtonText: "Sim, criar!",
+			cancelButtonText: "Não, cancelar!",
+			reverseButtons: true
+		}).then((result) => {
+			if (result.isConfirmed) {
+				console.log(values);
+				swalWithBootstrapButtons.fire({
+					title: "Criado!",
+					text: "O livro foi criado :)",
+					icon: "success"
+				});
+			} else if (
+				result.dismiss === Swal.DismissReason.cancel
+			) {
+				swalWithBootstrapButtons.fire({
+					title: "Cancelado",
+					text: "O livro não foi criado :(",
+					icon: "error"
+				});
+			}
+		});
+
 	}
 
 	return (
 		<Form {...form}>
-			<form onSubmit={form.handleSubmit(onSubmit)} className="w-full space-y-8">
+			<form id="novo-livro" onSubmit={form.handleSubmit(onSubmit)} className="w-full space-y-8">
 
 				<FormField
 					control={form.control}
@@ -108,7 +149,7 @@ const NovoLivroForm = () => {
 					)}
 				/>
 
-				<Button type="submit" className="btn">Cadastrar</Button>
+
 			</form>
 		</Form>
 	)

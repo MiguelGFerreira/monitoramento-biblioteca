@@ -19,13 +19,13 @@ const LivroCard = ({ livro }: LivroCardProps) => {
 		<div className='livro-card group'>
 			<div className='livro-card__content'>
 				<h2 className='livro-card__content-title'>
-					{titulo}
+					{titulo} - {autor}
 				</h2>
 			</div>
 
-			<p className='flex mt-6 text-[32px] font-extrabold'>
+			{/* <p className='flex mt-6 text-[32px] font-extrabold'>
 				{autor}
-			</p>
+			</p> */}
 
 			<div className='relative w-full h-40 my-3 object-contain'>
 				<Image src={link_capa} alt="imagem livro" fill priority className='object-contain' />
@@ -39,15 +39,15 @@ const LivroCard = ({ livro }: LivroCardProps) => {
 						</p>
 					</div>
 
-					<div className='flex flex-col justify-center items-center gap-2'>
+					{/* <div className='flex flex-col justify-center items-center gap-2'>
 						<p className='text-[14px]'>
 							{subcategoria}
 						</p>
-					</div>
+					</div> */}
 
 					<div className='flex flex-col justify-center items-center gap-2'>
 						<p className='text-[14px]'>
-							{paginas}
+							{status}
 						</p>
 					</div>
 				</div>
