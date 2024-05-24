@@ -2,9 +2,11 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Livros from "./pages/Livros";
 import Reservas from "./pages/Reservas";
 import { fetchLivros } from "@/api/livros";
+import { fetchReservas } from "@/api/reservas";
 
 export default async function Home() {
   const livros = await fetchLivros();
+  const reservas = await fetchReservas();
 
   return (
     <Tabs defaultValue="livros">
@@ -16,7 +18,7 @@ export default async function Home() {
         <Livros livros={livros} />
       </TabsContent>
       <TabsContent value="reservas">
-        <Reservas />
+        <Reservas reservas={reservas} />
       </TabsContent>
     </Tabs>
   );

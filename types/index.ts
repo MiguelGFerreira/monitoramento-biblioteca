@@ -8,3 +8,12 @@ export interface Livro {
 	status: "Ativo" | "Inativo" | "Reservado";
 	link_capa: string;
 }
+
+export interface Reserva {
+	id: number,
+	matricula: string,
+	nome: string,
+	titulo: string,
+	data_emprestimo: string,
+	data_devolucao: string
+}
