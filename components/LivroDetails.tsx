@@ -4,14 +4,74 @@ import Image from 'next/image';
 import { Fragment } from 'react';
 import { Dialog, DialogPanel, Transition, TransitionChild } from '@headlessui/react';
 import { Livro } from '@/types';
+import { Button } from './ui/button';
+import Swal from 'sweetalert2';
 
-interface CarDetailsProps {
+interface BookDetailsProps {
 	isOpen: boolean;
 	closeModal: () => void;
 	livro: Livro;
 }
 
-const LivroDetails = ({ isOpen, closeModal, livro }: CarDetailsProps) => {
+const LivroDetails = ({ isOpen, closeModal, livro }: BookDetailsProps) => {
+	const handleEdit = (async (livro: Livro) => {
+		const { value: formValues } = await Swal.fire({
+			title: "Editando Livro",
+			html: `
+				<input id="livro-id" value="${livro.id}">
+				<input id="livro-titulo" value="${livro.titulo}">
+				<input id="livro-categoria" value="${livro.categoria}">
+				<input id="livro-subcategoria" value="${livro.subcategoria}">
+				<input id="livro-autor" value="${livro.autor}">
+				<input id="livro-paginas" value="${livro.paginas}">
+			`,
+			focusConfirm: false,
+			preConfirm: () => {
+				const tituloLivro = (document.getElementById("livro-titulo") as HTMLInputElement);
+				const categoriaLivro = (document.getElementById("livro-categoria") as HTMLInputElement);
+				const subcategoriaLivro = (document.getElementById("livro-subcategoria") as HTMLInputElement);
+				const autorLivro = (document.getElementById("livro-autor") as HTMLInputElement);
+				const paginasLivro = (document.getElementById("livro-paginas") as HTMLInputElement);
+				if (tituloLivro && categoriaLivro && subcategoriaLivro && autorLivro && paginasLivro) {
+					return [
+						/*tituloLivro.value,
+						categoriaLivro.value,
+						subcategoriaLivro.value,
+						autorLivro.value,
+						paginasLivro.value*/
+					];
+				}
+			}
+		});
+
+		if (formValues) {
+			Swal.fire({
+				title: "Livro editado! :D",
+				icon: "success",
+			})
+		}
+	});
+
+	const handleDelete = (async (livro: Livro) => {
+		Swal.fire({
+			title: "Tem certeza?",
+			text: "Você quer deletar o livro?! :o",
+			icon: "warning",
+			showCancelButton: true,
+			confirmButtonColor: "#3085d6",
+			cancelButtonColor: "#d33",
+			confirmButtonText: "Sim, tchau livro!"
+		}).then((result) => {
+			if (result.isConfirmed) {
+				Swal.fire({
+					title: "Deletado!",
+					text: "O livro foi embora :(",
+					icon: "success"
+				});
+			}
+		});
+	});
+
 	return (
 		<>
 			<Transition appear show={isOpen} as={Fragment}>
@@ -74,6 +134,11 @@ const LivroDetails = ({ isOpen, closeModal, livro }: CarDetailsProps) => {
 													</div>
 												)
 											))}
+										</div>
+
+										<div className="flex mt-4 justify-between">
+											<Button onClick={(e: any) => handleDelete(livro)} className="btnPerigo">Deletar</Button>
+											<Button onClick={(e: any) => handleEdit(livro)} className="btnAzul">Editar</Button>
 										</div>
 									</div>
 								</DialogPanel>

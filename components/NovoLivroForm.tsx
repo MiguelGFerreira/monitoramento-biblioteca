@@ -49,7 +49,7 @@ const NovoLivroForm = () => {
 				<br>Categoria: ${values.categoria}
 				<br>Subcategoria: ${values.subcategoria}
 			`,
-			icon: "warning",
+			icon: "info",
 			showCancelButton: true,
 			confirmButtonText: "Sim, criar!",
 			cancelButtonText: "Não, cancelar!",

@@ -1,6 +1,6 @@
 import { Livro } from "@/types";
 
-const API_URL = 'http://10.10.200.70:8080/express-biblioteca/livros';
+const API_URL = 'http://127.0.0.1:8080/express-biblioteca/livros';
 
 export const fetchLivros = async () => {
 	const res = await fetch(`${API_URL}/`);
