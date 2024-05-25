@@ -18,7 +18,6 @@ const LivroDetails = ({ isOpen, closeModal, livro }: BookDetailsProps) => {
 		const { value: formValues } = await Swal.fire({
 			title: "Editando Livro",
 			html: `
-				<input id="livro-id" value="${livro.id}">
 				<input id="livro-titulo" value="${livro.titulo}">
 				<input id="livro-categoria" value="${livro.categoria}">
 				<input id="livro-subcategoria" value="${livro.subcategoria}">
