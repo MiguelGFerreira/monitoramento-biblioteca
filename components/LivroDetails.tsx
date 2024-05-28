@@ -3,9 +3,10 @@
 import Image from 'next/image';
 import { Fragment } from 'react';
 import { Dialog, DialogPanel, Transition, TransitionChild } from '@headlessui/react';
-import { Livro } from '@/types';
+import { Livro, LivroData } from '@/types';
 import { Button } from './ui/button';
 import Swal from 'sweetalert2';
+import { patchLivro } from '@/api/livros';
 
 interface BookDetailsProps {
 	isOpen: boolean;
@@ -18,6 +19,7 @@ const LivroDetails = ({ isOpen, closeModal, livro }: BookDetailsProps) => {
 		const { value: formValues } = await Swal.fire({
 			title: "Editando Livro",
 			html: `
+				<input type="hidden" id="livro-id" value="${livro.id}">
 				<input id="livro-titulo" value="${livro.titulo}">
 				<input id="livro-categoria" value="${livro.categoria}">
 				<input id="livro-subcategoria" value="${livro.subcategoria}">
@@ -26,18 +28,30 @@ const LivroDetails = ({ isOpen, closeModal, livro }: BookDetailsProps) => {
 			`,
 			focusConfirm: false,
 			preConfirm: () => {
+				const idLivro = (document.getElementById("livro-id") as HTMLInputElement);
 				const tituloLivro = (document.getElementById("livro-titulo") as HTMLInputElement);
 				const categoriaLivro = (document.getElementById("livro-categoria") as HTMLInputElement);
 				const subcategoriaLivro = (document.getElementById("livro-subcategoria") as HTMLInputElement);
 				const autorLivro = (document.getElementById("livro-autor") as HTMLInputElement);
 				const paginasLivro = (document.getElementById("livro-paginas") as HTMLInputElement);
 				if (tituloLivro && categoriaLivro && subcategoriaLivro && autorLivro && paginasLivro) {
+					const patchData: LivroData = {
+						id: Number(idLivro.value),
+						titulo: tituloLivro.value,
+						categoria: categoriaLivro.value,
+						subcategoria: subcategoriaLivro.value,
+						autor: autorLivro.value,
+						paginas: Number(paginasLivro.value)
+					}
+					console.log(patchData);
+					patchLivro(patchData, false);
 					return [
-						/*tituloLivro.value,
-						categoriaLivro.value,
-						subcategoriaLivro.value,
-						autorLivro.value,
-						paginasLivro.value*/
+						// idLivro.value,
+						// tituloLivro.value,
+						// categoriaLivro.value,
+						// subcategoriaLivro.value,
+						// autorLivro.value,
+						// paginasLivro.value
 					];
 				}
 			}
@@ -62,6 +76,8 @@ const LivroDetails = ({ isOpen, closeModal, livro }: BookDetailsProps) => {
 			confirmButtonText: "Sim, tchau livro!"
 		}).then((result) => {
 			if (result.isConfirmed) {
+				const patchData: LivroData = { id: livro.id, deletado: "S"}
+				patchLivro(patchData, true);
 				Swal.fire({
 					title: "Deletado!",
 					text: "O livro foi embora :(",

@@ -17,3 +17,13 @@ export interface Reserva {
 	data_emprestimo: string,
 	data_devolucao: string
 }
+
+export interface LivroData {
+	id: number;
+	titulo?: string;
+	categoria?: string;
+	subcategoria?: string;
+	autor?: string;
+	paginas?: number;
+	deletado?: string;
+  }
