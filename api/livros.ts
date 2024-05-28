@@ -1,4 +1,7 @@
+"use server"
+
 import { LivroData } from "@/types";
+import { revalidatePath } from "next/cache";
 
 const API_URL = 'http://127.0.0.1:8080/express-biblioteca/livros';
 
@@ -33,6 +36,7 @@ export const postLivro = async (data: LivroData) => {
 		.then(response => response.text())
 		.then(result => console.log(result))
 		.catch(error => console.log('error', error));
+	revalidatePath("pages/Livro", "page")
 }
 
 export const patchLivro = async (data: LivroData, del: boolean) => {
@@ -64,6 +68,7 @@ export const patchLivro = async (data: LivroData, del: boolean) => {
 		});
 		const result = await response.text();
 		console.log('Livro atualizado com sucesso:', result);
+		revalidatePath("pages/Livro", "page")
 	} catch (error) {
 		console.error('Falha ao atualizar livro:', error);
 	}

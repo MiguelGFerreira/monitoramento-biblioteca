@@ -29,7 +29,6 @@ const NovoLivroForm = () => {
 		},
 	})
 
-	// 2. Define a submit handler.
 	function onSubmit(values: z.infer<typeof livroSchema>) {
 
 		const swalWithBootstrapButtons = Swal.mixin({
@@ -57,6 +56,7 @@ const NovoLivroForm = () => {
 		}).then((result) => {
 			if (result.isConfirmed) {
 				console.log(values);
+				postLivro(values);
 				swalWithBootstrapButtons.fire({
 					title: "Criado!",
 					text: "O livro foi criado :)",

@@ -19,7 +19,7 @@ export interface Reserva {
 }
 
 export interface LivroData {
-	id: number;
+	id?: number;
 	titulo?: string;
 	categoria?: string;
 	subcategoria?: string;
