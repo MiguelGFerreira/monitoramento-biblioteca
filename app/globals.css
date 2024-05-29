@@ -123,46 +123,30 @@
 
 /* START: Card Livro styles */
 .livro-card {
-  @apply flex flex-col p-6 justify-center items-start text-black bg-emerald-600 hover:bg-emerald-300 hover:shadow-md rounded-3xl;
+  @apply flex flex-col p-6 justify-center items-start text-black bg-emerald-600 hover:bg-emerald-300 hover:shadow-md transition-all;
+}
+
+.livro-card:hover {
+  @apply shadow-lg transform scale-105;
 }
 
 .livro-card__content {
-  @apply w-full flex justify-between items-start gap-2;
+  @apply w-full flex flex-col justify-start items-start mb-4;
 }
 
 .livro-card__content-title {
-  @apply text-[22px] leading-[26px] font-bold capitalize;
+  @apply text-xl font-bold capitalize mb-1;
 }
 
-.livro-card__price {
-  @apply flex mt-6 text-[32px] leading-[38px] font-extrabold;
-}
-
-.livro-card__price-dollar {
-  @apply self-start text-[14px] leading-[17px] font-semibold;
-}
-
-.livro-card__price-day {
-  @apply self-end text-[14px] leading-[17px] font-medium;
+.livro-card__content-author {
+  @apply text-sm text-black;
 }
 
 .livro-card__image {
   @apply relative w-full h-40 my-3 object-contain;
 }
 
-.livro-card__icon-container {
-  @apply flex group-hover:invisible w-full justify-between text-gray-500;
-}
-
-.livro-card__icon {
-  @apply flex flex-col justify-center items-center gap-2;
-}
-
-.livro-card__icon-text {
-  @apply text-[14px] leading-[17px];
-}
-
 .livro-card__btn-container {
-  @apply hidden group-hover:flex bg-amber-400 rounded-2xl absolute bottom-0 w-full z-10;
+  @apply hidden rounded-xl group-hover:flex justify-center items-center bg-amber-400 w-full absolute;
 }
 /* END: Card Livro styles */

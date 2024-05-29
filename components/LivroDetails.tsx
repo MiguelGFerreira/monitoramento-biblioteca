@@ -103,7 +103,7 @@ const LivroDetails = ({ isOpen, closeModal, livro }: BookDetailsProps) => {
 						<div className='fixed inset-0 bg-black bg-opacity-25' />
 					</TransitionChild>
 
-					<div className="fixed inset-0 overflow-y=auto">
+					<div className="fixed inset-0 overflow-y-auto">
 						<div className="flex min-h-full items-center justify-center p-4 text-center">
 							<TransitionChild
 								as={Fragment}
@@ -117,7 +117,7 @@ const LivroDetails = ({ isOpen, closeModal, livro }: BookDetailsProps) => {
 								<DialogPanel className="relative w-full max-w-lg max-h-[90vh] overflow-y-auto transform rounded-2xl bg-white p-6 text-left shadow-xl transition-all flex flex-col gap-5">
 									<button
 										type="button"
-										className="absolute top-2 right-2 z-10 w-fit p-2 bg-primary-blue-100 rounded-full"
+										className="absolute top-2 right-2 z-10 w-fit p-2 bg-gray-200 rounded-full hover:bg-gray-300 trasition"
 										onClick={closeModal}
 									>
 										<Image
@@ -130,8 +130,8 @@ const LivroDetails = ({ isOpen, closeModal, livro }: BookDetailsProps) => {
 									</button>
 
 									<div className="flex-1 flex flex-col gap-3">
-										<div className="relative w-full h-40 bg-pattern bg-cover bg-center rounded-lg">
-											<Image src={livro.link_capa} alt="Imagem do livro" fill priority className='object-contain' />
+										<div className="relative w-full h-40 bg-gray-100 rounded-lg">
+											<Image src={livro.link_capa} alt="Imagem do livro" fill priority className='object-contain rounded-lg' />
 										</div>
 									</div>
 
@@ -144,16 +144,16 @@ const LivroDetails = ({ isOpen, closeModal, livro }: BookDetailsProps) => {
 											{Object.entries(livro).map(([key, value]) => (
 												key !== "link_capa" && (
 													<div className="flex justify-between gap-5 w-full text-right" key={key}>
-														<h4 className="text-grey capitalize">{key.replace("_", " ")}</h4>
-														<p className="text-black-100 font-semibold">{value}</p>
+														<h4 className="text-gray-500 capitalize">{key.replace("_", " ")}</h4>
+														<p className="text-gray-800 font-semibold">{value}</p>
 													</div>
 												)
 											))}
 										</div>
 
 										<div className="flex mt-4 justify-between">
-											<Button onClick={(e: any) => handleDelete(livro)} className="btnPerigo">Deletar</Button>
-											<Button onClick={(e: any) => handleEdit(livro)} className="btnAzul">Editar</Button>
+											<Button onClick={(e: any) => handleDelete(livro)} className="btnPerigo hover:bg-red-500">Deletar</Button>
+											<Button onClick={(e: any) => handleEdit(livro)} className="btnAzul hover:bg-sky-200">Editar</Button>
 										</div>
 									</div>
 								</DialogPanel>

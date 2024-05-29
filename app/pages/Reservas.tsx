@@ -10,7 +10,7 @@ const Reservas = ({ reservas }: { reservas: Reserva[] }) => {
 					<h1 className='text-4xl font-extrabold'>Reservas</h1>
 				</div>
 				<Table>
-					<TableCaption>A list of your recent invoices.</TableCaption>
+					{/* <TableCaption>A list of your recent invoices.</TableCaption> */}
 					<TableHeader>
 						<TableRow>
 							<TableHead>Id</TableHead>
